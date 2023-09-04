@@ -55,3 +55,20 @@ footer {
     text-align: center;
     padding: 10px 0;
 }
+/* styles.css */
+
+/* Estilo de la animación del logo giratorio */
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+/* Estilo del logo en el centro de la pantalla */
+#loading-logo {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    animation: spin 2s linear infinite; /* Aplica la animación giratoria */
+    z-index: 9999; /* Asegura que el logo esté en la parte superior */
+}
